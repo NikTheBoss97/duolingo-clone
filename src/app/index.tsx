@@ -1,10 +1,10 @@
 import { Link } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
-export default function Index() {
+export default function App() {
   return (
-    <View style={styles.container}>
+    <View className="flex-1 items-center justify-center bg-white">
       <Text>Duolingo Clone</Text>
       <StatusBar style="auto" />
       <Link href="/profile" style={{ marginTop: 20, color: "blue" }}>
@@ -13,11 +13,3 @@ export default function Index() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
