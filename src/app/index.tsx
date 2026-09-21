@@ -5,7 +5,7 @@ import { Text, View } from "react-native";
 export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text>Duolingo Clone</Text>
+      <Text className="text-3xl font-bold">Duolingo Clone</Text>
       <StatusBar style="auto" />
       <Link href="/profile" style={{ marginTop: 20, color: "blue" }}>
         Go to Profile
