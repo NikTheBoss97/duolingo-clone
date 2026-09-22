@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import { Image, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import { icons } from "../../../constants";
 
 const TabIcon = ({ icon, color, name, focused }) => {
@@ -11,6 +11,11 @@ const TabIcon = ({ icon, color, name, focused }) => {
         tintColor={color}
         className="w-6 h-6"
       />
+      <Text
+        className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}
+      >
+        {name}
+      </Text>
     </View>
   );
 };
@@ -18,7 +23,11 @@ const TabIcon = ({ icon, color, name, focused }) => {
 const TabsLayout = () => {
   return (
     <>
-      <Tabs>
+      <Tabs
+        screenOptions={{
+          tabBarShowLabel: false,
+        }}
+      >
         <Tabs.Screen
           name="home"
           options={{
