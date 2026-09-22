@@ -1,8 +1,24 @@
 import { Tabs } from "expo-router";
-import { Image, Text, View } from "react-native";
+import {
+  ColorValue,
+  Image,
+  ImageSourcePropType,
+  Text,
+  View,
+} from "react-native";
 import { icons } from "../../../constants";
 
-const TabIcon = ({ icon, color, name, focused }) => {
+const TabIcon = ({
+  icon,
+  color,
+  name,
+  focused,
+}: {
+  icon: ImageSourcePropType;
+  color: ColorValue;
+  name: string;
+  focused: boolean;
+}) => {
   return (
     <View className="items-center justify-center gap-2">
       <Image
