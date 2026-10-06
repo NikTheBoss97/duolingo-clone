@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { CustomButton } from "../../components";
@@ -40,6 +41,7 @@ export default function App() {
           />
         </View>
       </ScrollView>
+      <StatusBar style="light" />
     </SafeAreaView>
   );
 }
