@@ -1,20 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
-  presets: [require("nativewind/preset")],
+  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
         primary: "#161622",
-        feather: "#58CC02",
-        mask: "#58A700",
-        macaw: "#1CB0F6",
-        cardinal: "#FF4B4B",
-        bee: "#FFC800",
-        fox: "#FF9600",
-        eel: "#4B4B4B",
-        wolf: "#777777",
-        swan: "#E5E5E5",
+        secondary: {
+          DEFAULT: "#FF9C01",
+          100: "#FF9001",
+          200: "#FF8E01",
+        },
+        black: {
+          DEFAULT: "#000",
+          100: "#1E1E2D",
+          200: "#232533",
+        },
+        gray: {
+          100: "#CDCDE0",
+        },
       },
       fontFamily: {
         pthin: ["Poppins-Thin", "sans-serif"],
